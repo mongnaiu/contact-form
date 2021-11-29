@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'GT Walsheim Pro';
+    src: url('font/GTWalsheimPro-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: bold;
+}
+
+*{
+font-family: 'Lato', sans-serif;
+font-family: 'Lora', serif;
+margin: 0;
+padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 
+.test-form input {
+    width: 100%;
+    padding-top: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid black;
+}
+.test-form label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    transition: all 300ms ease;
+}
+
+
+.test-form{
+    position: relative;
+    width: 324px;
+    margin:100px auto;
+}
+/* .test-form input:focus ~ label,
+.test-form input:valid ~ label
+{
+    transform: translateY(-20px);
+} */ 
+.main-container{
+    width: 85%;
+    margin: 100px auto;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 27px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.right-col{
+
+  grid-column: 2/-1;
+  padding: 35px 40px 20px 35px;
+}
+
+/* formmmm */
+.name{
+    /* margin: 15px 0px; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+  
+}
+.name label{
+    font-family: 'Poppins', sans-serif;
+}
+form .name input{
+    appearance: none;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+.fname{
+    position: relative;
+}
+.name input:focus + .under{
+transform: scaleX(1);
+transform-origin: left;
+}
+.under{
+    position: absolute;
+    width: 100%;
+    background-color: blueviolet;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 250ms ease;
+transform-origin: right;
+}
+.intro{
+    margin: 36px 0px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.intro label{
+    font-family: 'Poppins', sans-serif;
+}
+form .intro input{
+
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid black;
+    outline: none;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.che-me{
+    display: flex;
+gap: 40px;
+font-family: 'Poppins', sans-serif;
+}
+.check-intro h4{
+    width: 100%;
+    margin: 20px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.che-me input[type="checkbox"]{
+    vertical-align: middle;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray;
+    /* padding: 5px; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    position: relative;
+    
+}
+.che-me input[type="checkbox"]:checked{
+    background-color: blueviolet;
+}
+.che-me input[type="checkbox"]::after{
+    font-family: "Font Awesome 5 Free";
+ font-weight: 900;
+      content: "\f00c";
+      font-size: 10px;
+      transform: translateX(3px) translateY(3px);
+
+      position: absolute;
+/* bottom: 0;
+right: 0;
+left: 0; */
+color: white;
+}
+.che-me label{
+    vertical-align: middle;
+    font-family: 'Poppins', sans-serif;
+}
+.msg{
+    margin: 40px 0px;
+   
+}
+.msg label{
+    font-family: 'Poppins', sans-serif;
+}
+.msg textarea{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    resize: vertical;
+    font-family: 'Poppins', sans-serif;
+}
+
+.my-btn{
+    background-color: blueviolet;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+font-weight: 200px;
+}
+
+/* left col */
+.left-col{
+   background: url(images/4884451.jpg);
+   background-position: center left;
+   background-size: cover;
+   padding: 30px 23px 30px 23px;
+   border-radius: 10px;
+}
+.left-col h2{
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+.left-col p{
+    font-family: 'Poppins',sans-serif;
+color: white;
+}
+.ic-link{
+    margin: 35px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.ic-link a{
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    color: white;
+    
+}
+.ic-link .ic{
+    padding-right: 10px;
+}
+.social{
+    margin-top: 100px;
+    display: flex;
+    gap: 16px;
+}
+.fab{
+    font-size: 20px;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .main-container{
+       display: grid;
+      grid-template-columns: 1fr;
+      
+    }
+    .left-col{
+        grid-column: 1/-1;
+      
+    }
+    .right-col{
+        grid-column: 1/-1;
+    }
+}
+
+.in-anim{
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-input{
+  padding-top: 20px;
+  position: relative;
+    
+}
+.custom-input input{
+    appearance: none;
+    padding: 12px;
+    background-color: rgb(231, 231, 231);
+    outline: none;
+    border: none;
+    width: 300px;
+    font-size: 15px;
+}
+.custom-input .placeholder{
+    position: absolute;
+    left: 12px;
+    top:30px;
+    color: rgb(173, 173, 173);
+    pointer-events: none;
+    transition: top 300ms ease ,left 300ms ease, color 300ms ease ;
+}
+.custom-input input:focus + .placeholder,
+.custom-input input.dirty + .placeholder{
+    left: 2px;
+    top: 2px;
+    color: black;
+}
